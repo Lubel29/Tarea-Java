@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java parte 2 1er ejercicio</title>
+    <link rel="stylesheet" href="TareaJavaParte2.css">
+</head>
+
+
+
+<body>
+
+    <p>
+
+    <h2>Click en alguna caja</h2>
+
+
+    <div id="Caja1">
+        <button id="cambiarcolor" onclick="cambiar()">Cambiar Color</button>
+    </div>
+    <div id="Caja2">
+        <button id="cambiarcolor" onclick="cambiar2()">Cambiar Color</button>
+    </div>
+    <div id="Caja3">
+        <button id="cambiarcolor" onclick="cambiar3()">Cambiar Color</button>
+    </div>
+
+    </p>
+
+    <script>
+        function cambiar() {
+            let body = document.getElementsByTagName('body')[0];
+
+            body.style.backgroundColor = '#ff0000';
+        }
+        function cambiar2() {
+            let body = document.getElementsByTagName('body')[0];
+
+            body.style.backgroundColor = '#0000ff';
+        }
+        function cambiar3() {
+            let body = document.getElementsByTagName('body')[0];
+
+            body.style.backgroundColor = '#008000';
+        }
+    </script>
+
+
+</body>
+
+</html>
