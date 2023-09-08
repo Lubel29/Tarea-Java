@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 2E2</title>
+</head>
+
+<body>
+
+    <h2>Escriba su mensaje</h2>
+    <textarea id="contenido" placeholder="Inserte mensaje"></textarea>
+    <p>Número de caracteres: </p>
+    <div id="mensaje"></div>
+    <p class="acciones"><input type="submit" value="Enviar" /></p>
+    </p>
+
+    <script>
+        function contar() {
+            document.getElementById("mensaje").textContent = document.getElementById("contenido").value.length;
+        }
+
+        document.getElementById("contenido").addEventListener("input", contar);
+    </script>
+</body>
+
+</html>
